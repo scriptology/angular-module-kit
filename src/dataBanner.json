@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "active": true,
+    "dataCreated": "",
+    "project": "",
+    "creator": "",
+    "layers": [
+      {
+        "frame": "http://fakeimg.pl/100x200/282828/eae0d0/",
+        "animationType": "",
+        "animationTime": "",
+        "frameShow": ""
+      },
+      {
+        "frame": "http://fakeimg.pl/100x200/282828/eae0d0/",
+        "animationType": "",
+        "animationTime": "",
+        "frameShow": ""
+      }
+    ]
+  }
+]

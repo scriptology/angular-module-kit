@@ -1,0 +1,6 @@
+div.banner-maker
+    .banner-maker__layers
+        .banner-maker__layer(ng-repeat="layer in dataBanner.layers")
+            img(ng-src="{{layer.frame}}")
+        .banner-maker__layer--add(ng-click="addLayer()")
+            span + add frame

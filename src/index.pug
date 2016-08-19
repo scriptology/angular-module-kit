@@ -2,14 +2,13 @@
 
 html
   head
-    script.
-      window.prerenderReady = false;
     meta(charset='utf-8')
     meta(name='fragment', content='!')
     meta(name='viewport', content='max-width=480, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=device-dpi, user-scalable=no')
     meta(name='robots', content='index, follow')
     link(rel='shortcut icon', href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjYyRjg3MzgzOTY4MzExRTVCMkY5RDk2Q0NGRjBBRDlFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjYyRjg3Mzg0OTY4MzExRTVCMkY5RDk2Q0NGRjBBRDlFIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NjJGODczODE5NjgzMTFFNUIyRjlEOTZDQ0ZGMEFEOUUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NjJGODczODI5NjgzMTFFNUIyRjlEOTZDQ0ZGMEFEOUUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5arT0JAAACFklEQVR42uyXTShEURTHPRkailJKKIMMIYp8lpGFkIUsSclKsZKysKB8JBsLC6JmQRRK8rUXKaVISk2NmiIRIcpHmPG/ddTrdN+bmTuLKTn1S/fc++7fveeec+9oPp8vIhwWGREmC5twlMx5ZcvhrmhQB+6AHeSCQtAATsADmAWbwKv/MM3jClyYWT6YAdUG/WX0V/wTHtAJdkPd6jywZSLKzQYWQUkown3gDGQEGb5UMO9vUUadKWBc0n8EzsELtb9MwlOvIlwELMx3Acpp0mTgAImgHQxJ5mhREX6X+LJ0sX4F+7TyJTAMbth4i4rwpYH/zWSuT9auUhF2g1XmEznsMhhvFSnLfPdBFxCyVrBOcRQFwwme2ZgKMAq+gcb60lWFRQVa1rUTQC0dKgetstLke7eq8K+YOFBTCvl8qyos0mabqpGKfasIx1LBl4mKC/yYQiFivgfWKG9HdOOeVIS7QSbziZydA2PgUfJNE2ufqgh3sbZYVSMVDplpVO30VqySxzw1nCaiBeAAtDH/qoowf4glGYwT+X1okFY2s+vRaKt5DAfpMK1T2ayhEjkA4gzm6KeFZQcjLAp/qa4dDybBBF2F1gDSya6y1aJg9Ej8Fj+iC+A6lFemiPE06KUT7fUzzwZoBh309rrzJ6zJHvSSV+Zv2RRbvkKPug8QQ/fwFjuQCVTPvXhl7gQs/P9L4k8J/wgwAKkzbiHzvE9+AAAAAElFTkSuQmCC')
-    title Allure.ru
+    title Banner maker
     base(href='/')
-  body(ng-class="{mobile : mobileCheck, '-overflow-sidebar-left' : sidebarLeft}")
-    #base.base(ui-view='')
+  body
+    #base.base
+      ng-banner-maker

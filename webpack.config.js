@@ -1,15 +1,11 @@
 var webpack = require("webpack");
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-//var BowerWebpackPlugin = require('bower-webpack-plugin');
-//var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const NODE_ENV = process.env.NODE_ENV || 'dev';
 
 var config = {
-    entry: {
-        app: ['./src/index.js']
-    },
+    entry: NODE_ENV == 'dev' ? "./src/core/bootstrap.js" : './src/core/bootstrap-dist.js',
     //devtool: 'source-map',
     output: {
         path: path.resolve(__dirname, 'dist/'),
@@ -19,16 +15,11 @@ var config = {
     },
     resolve: {
         root: __dirname + '/src/'
-        //alias: {
-        //    'src': __dirname + '/dist/'
-        //}
 
     },
     devServer: {
         historyApiFallback: true
     },
-    //watch: true,
-    //devtool: "source-map", // or "inline-source-map"
     module: {
         noParse: [],
         loaders: [
@@ -55,11 +46,11 @@ var config = {
             $:      "jquery",
             jQuery: "jquery"
         }),
-        new webpack.optimize.UglifyJsPlugin({
-            sourceMap: false,
-            mangle: false,
-            compress: { warnings: false }
-        }),
+        // new webpack.optimize.UglifyJsPlugin({
+        //     sourceMap: false,
+        //     mangle: false,
+        //     compress: { warnings: false }
+        // }),
         new webpack.DefinePlugin({
             NODE_ENV: JSON.stringify(NODE_ENV)
         }),
