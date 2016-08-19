@@ -1,0 +1,23 @@
+{
+  "name": "banner-maker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build-prod": "NODE_ENV=prod webpack",
+    "build-test": "NODE_ENV=test webpack",
+    "build-dev": "NODE_ENV=dev webpack",
+    "devs": "NODE_ENV=dev webpack-dev-server --content-base web --hot --inline --devtool eval --host 0.0.0.0",
+    "generate-info": "webpack --json --profile >stats.json"
+  },
+  "author": "Andrey Solovev",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "html-webpack-plugin": "^2.22.0",
+    "pug": "^2.0.0-beta5",
+    "pug-loader": "^2.2.1",
+    "webpack": "^1.13.2"
+  }
+}
