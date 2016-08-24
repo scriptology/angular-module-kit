@@ -2,10 +2,9 @@
  * Created by asolovyev on 19/08/16.
  */
 
-let angular = angular || {};
-if(NODE_ENV == 'dev') {
-    angular = require('angular');
-}
+// if(NODE_ENV == 'dev') {
+//     angular = require('angular');
+// }
 
 function ngBannerFrame() {
     return {

@@ -2,10 +2,8 @@
  * Created by asolovyev on 19/08/16.
  */
 
-let angular = angular || {};
-if(NODE_ENV == 'dev') {
-    angular = require('angular');
-}
+
+require('!style!css!sass!./style/ng-banner-maker.sass');
 
 function ngBannerMaker() {
     return {
