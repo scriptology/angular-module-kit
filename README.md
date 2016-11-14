@@ -1,1 +1,1 @@
-# banner-maker
+# angular module kit
